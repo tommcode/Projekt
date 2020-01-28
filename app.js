@@ -16,7 +16,4 @@ $(function(){
     btn.addEventListener('click', function() {
         menu.classList.toggle('show');
     });
-
-
-    
 })

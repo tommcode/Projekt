@@ -10,20 +10,30 @@
     <script src="./app.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <!-- <script src="responsiveslides.min.js"></script> -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <title>Biuro Projektowe - Pago</title>
 </head>
 <body>
         
         <header class="page-header">
-            <div class="main_width">
+                <div class="main_width">
                 <a href="./index.html" class="page-logo">
                     <img src="./images/logo.svg" alt="">
                 </a>
+    
                 <nav class="page-nav">
                     <ul class="page-nav-list">
                         <li><a href="./index.html"><i class="fas fa-home"></i>  Strona główna</a></li>
-                        <li><a href="./projekty.html"><i class="fas fa-city"></i>  Nasze projekty</a></li>
+                        <!-- <li><a href="./projekty.html"><i class="fas fa-city"></i>  Nasze projekty</a></li> -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn"><i class="fas fa-city"></i>  Nasze projekty</a>
+                            <div class="dropdown-content">
+                                <a href="./projekty_uslugowe.html"><i class="fas fa-home"></i>Budynki usługowe</a>
+                                <a href="./wielorodzinne.html"><i class="fas fa-hotel"></i>Budynki wielorodzinne</a>
+                                <a href="./sale_bankietowe.html"><i class="fas fa-warehouse"></i>Sale bankietowe</a>
+                                   
+                            </div>
                         <li><a href="./oferta.html"><i class="fas fa-folder-open"></i>  Oferta</a></li>
                         <li><a href="./kontakt.html"><i class="fas fa-envelope"></i>  Kontakt</a></li>
                     </ul>
@@ -36,6 +46,97 @@
                 </nav>
             </div>
         </header>
+        <main>
+            <div class="main_width_offer">
+
+                <div class="main_content_index">
+                    <p>Biuro projektowe PAGO powstało w 2004 roku. Zajmujemy się projektowaniem
+                         w pełnym zakresie. Współpracujemy z inżynierami ze wszystkich branż. 
+                         Towarzyszymy naszym inwestorom od momentu napisania wniosku o wydanie
+                          decyzji o warunkach zabudowy/uzyskania zaświadczenia inwestycyjnego 
+                          do uzyskania pozwolenia na budowę. 
+                        Udzielamy wszelkich informacji dotyczących procesu budowlanego.<br>
+                        Zajmujemy się projektami: <span>budynków usługowych i handlowych, budynków jedno i wielorodzinnych,
+                        sal bankietowych oraz budynków użyteczności publicznej.</span>
+
+                        </p>
+                    <div class="three_photos">
+                    <div class="first_content">
+                        <!-- <h2>Budynki usługowe i handlowe</h2> -->
+                        <div class="gallery">
+                            <div class="galeria">Budynki usługowe i handlowe</div>
+                            <a href="./projekty_uslugowe.html" class="gallery-el">
+                            <img src="./images/2.png" class="gallery-el-img">
+                            <div class="gallery-el-over">
+                            <h2 class="gallery-title">Budynki usługowe i handlowe</h2>
+                            <!-- <p class="gallery-el-text">
+                            </p> -->
+                        </div>
+                        
+                        </div>
+                    </a>
+                    </div>
+                    <div class="second_content">
+                        
+                        <div class="gallery">
+                            <div class="galeria">Budynki jedno i wielorodzinne</div>
+                                <a href="./wielorodzinne.html" class="gallery-el">
+                                <img src="./images/15.jpeg" class="gallery-el-img">
+                                <div class="gallery-el-over">
+                                <h2 class="gallery-title">Budynki jedno i wielorodzinne</h2>
+                                <!-- <p class="gallery-el-text">
+                                </p> -->
+                            </div>
+                            </div>
+                    </a>
+                    </div>
+                    <div class="third_content">
+                        
+                        <div class="gallery">
+                            <div class="galeria">Sale bankietowe i budynki<br>użyteczności publicznej</div>
+                            <a href="./sale_bankietowe.html" class="gallery-el">
+                            <img src="images/zdjecia/sale_bankiet/6.jpg" class="gallery-el-img">
+                            <div class="gallery-el-over">
+                            <h2 class="gallery-title">Sale bankietowe i budynki użyteczności publicznej</h2>
+                            <!-- <p class="gallery-el-text">
+                            </p> -->
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+        <!-- <div class="container">
+                <div class="slide show" style="background-image: url('./images/1.png');">
+                    <div class="content">Wykonamy dla Ciebie każdy projekt!</div></div>
+                <div class="slide" style="background-image: url('./images/2.png');">
+                    <div class="content">Wykonamy dla Ciebie każdy projekt!</div></div>
+                <div class="slide" style="background-image: url('./images/3.png');">
+                    <div class="content">Wykonamy dla Ciebie każdy projekt!</div></div>
+              </div> -->
+      
+        <footer>
+            <div class="main_width_footer">
+                <div class="footer">
+                    <div>
+                        Biuro Projektowe FHU PAGO
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="fa fa-phone"></i><a href=""> 509461400</a></li>
+                            <li><i class="fa fa-phone"></i><a href=""> 505106712</a></li>
+                            <li><a href="https://www.facebook.com/pagoprojekty/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>  
+        </footer>
         
 </body>
 </html>

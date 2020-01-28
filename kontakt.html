@@ -4,38 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/fcd5ec4559.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <!-- <script src="responsiveslides.min.js"></script> -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Biuro Projektowe - Pago</title>
 </head>
 <body>
         
-        <header class="page-header">
-            <div class="main_width">
-                <a href="./index.html" class="page-logo">
-                    <img src="./images/logo.svg" alt="">
-                </a>
-                <nav class="page-nav">
-                    <ul class="page-nav-list">
-                        <li><a href="./index.html"><i class="fas fa-home"></i>  Strona główna</a></li>
-                        <li><a href="./projekty.html"><i class="fas fa-city"></i>  Nasze projekty</a></li>
-                        <li><a href="./oferta.html"><i class="fas fa-folder-open"></i>  Oferta</a></li>
-                        <li><a href="./kontakt.html"><i class="fas fa-envelope"></i>  Kontakt</a></li>
-                    </ul>
-    
-                    <button class="nav-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </nav>
-            </div>
-        </header>
         
+    <header class="page-header">
+            <div class="main_width">
+            <a href="./index.html" class="page-logo">
+                <img src="./images/logo.svg" alt="">
+            </a>
+
+            <nav class="page-nav">
+                <ul class="page-nav-list">
+                    <li><a href="./index.html"><i class="fas fa-home"></i>  Strona główna</a></li>
+                    <!-- <li><a href="./projekty.html"><i class="fas fa-city"></i>  Nasze projekty</a></li> -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn"><i class="fas fa-city"></i>  Nasze projekty</a>
+                        <div class="dropdown-content">
+                            <a href="./projekty_uslugowe.html"><i class="fas fa-home"></i>Budynki usługowe</a>
+                            <a href="./wielorodzinne.html"><i class="fas fa-hotel"></i>Budynki wielorodzinne</a>
+                            <a href="./sale_bankietowe.html"><i class="fas fa-warehouse"></i>Sale bankietowe</a>
+                               
+                        </div>
+                    <li><a href="./oferta.html"><i class="fas fa-folder-open"></i>  Oferta</a></li>
+                    <li><a href="./kontakt.html"><i class="fas fa-envelope"></i>  Kontakt</a></li>
+                </ul>
+
+                <button class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+   
+    <main>
+        <div class="main_width_main_contact">
+
+            <div class="contact">
+                <div class="data">
+                    <h1>FHU "PAGO"</h1>
+                    <h2>Biuro Projektowe</h2>
+                    <p>Adres:</p>
+                    <p>ul. Zieluńska 42b</p>
+                    <p>13-230 Lidzbark</p>
+                    <p>Patrycja Golian <br></p>
+                    <p>NIP 571-112-34-61</p>
+                    <p>REGON 130356213</p>
+                    <br>
+                    <p>Tel: <a href="">509461400</a></p>
+                    <p>Tel: <a href="">505106712</a></p>
+                    <p>E-mail: <a href="mailto:pago.projekty.op.pl">pago.projekty.op.pl</a></p>
+                    <br>
+                    
+                </div>
+            <div class="frame">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2386.954334383894!2d19.818804878694895!3d53.25451846897634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471d06882fcfbfb9%3A0xc7af66e2cece46fa!2sZielu%C5%84ska%2042b%2C%2013-230%20Lidzbark!5e0!3m2!1spl!2spl!4v1569935467636!5m2!1spl!2spl" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" class="iFrame"></iframe>
+            </div>
+            <form class="form" id="contactForm" method="post" novalidate action="./send-scripts.php">
+                <p>W razie jakichkolwiek pytań napisz do nas, koniecznie zostawiając numer telefonu!</p>
+                <div class="form-row">
+                    <label for="field-name">Imię*</label>
+                    <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+                </div>
+                <div class="form-row">
+                    <label for="field-email">E-mail*</label>
+                    <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                </div>
+                <div class="form-row">
+                    <label for="field-message">Wiadomość*</label>
+                    <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="submit-btn">
+                        Wyślij
+                    </button>
+                </div>
+            </form>
+           
+        </div>
+    </main>
+    <footer>
+        <div class="main_width_footer">
+            <div class="footer">
+                <div>
+                    Biuro Projektowe FHU PAGO
+                </div>
+                <div>
+                    <ul>
+                        <li><i class="fa fa-phone"></i><a href=""> 509461400</a></li>
+                        <li><i class="fa fa-phone"></i><a href=""> 505106712</a></li>
+                        <li><a href="https://www.facebook.com/pagoprojekty/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>  
+    </footer>
+
 </body>
 </html>

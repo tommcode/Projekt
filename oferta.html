@@ -4,25 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/fcd5ec4559.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Biuro Projektowe - Pago</title>
 </head>
 <body>
         
         <header class="page-header">
-            <div class="main_width">
+                <div class="main_width">
                 <a href="./index.html" class="page-logo">
                     <img src="./images/logo.svg" alt="">
                 </a>
+    
                 <nav class="page-nav">
                     <ul class="page-nav-list">
                         <li><a href="./index.html"><i class="fas fa-home"></i>  Strona główna</a></li>
-                        <li><a href="./projekty.html"><i class="fas fa-city"></i>  Nasze projekty</a></li>
+                        <!-- <li><a href="./projekty.html"><i class="fas fa-city"></i>  Nasze projekty</a></li> -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn"><i class="fas fa-city"></i>  Nasze projekty</a>
+                            <div class="dropdown-content">
+                                <a href="./projekty_uslugowe.html"><i class="fas fa-home"></i>Budynki usługowe</a>
+                                <a href="./wielorodzinne.html"><i class="fas fa-hotel"></i>Budynki wielorodzinne</a>
+                                <a href="./sale_bankietowe.html"><i class="fas fa-warehouse"></i>Sale bankietowe</a>
+                                   
+                            </div>
                         <li><a href="./oferta.html"><i class="fas fa-folder-open"></i>  Oferta</a></li>
                         <li><a href="./kontakt.html"><i class="fas fa-envelope"></i>  Kontakt</a></li>
                     </ul>
@@ -35,104 +44,109 @@
                 </nav>
             </div>
         </header>
-        <main>
-            <div class="main_width_offer">
-                <div class="main_content_top">
-                    <h1>Nasza oferta</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nam recusandae doloremque molestias natus, corrupti iusto porro quis omnis. Sapiente quod nostrum ut eum, ipsa eligendi repellat, dolorum quisquam nisi minima illum excepturi voluptatem! Voluptatum, vero dolores? Officiis blanditiis maiores officia explicabo nobis deserunt labore. Quidem vitae sint mollitia officia!</p>
-                </div>
-                <div class="main_content">
-                    <div class="left_content">
-                        <h1>Lorem ipsum dolor sit?</h1>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur.</li>
-                            <li>Lorem, ipsum.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-                        </ul>
-                    </div>
-                    <div class="right_content">
-                        <h1>Lorem, ipsum.?</h1>
-                        <ul>
-                            <li>Lorem, ipsum dolor.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem, ipsum.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="central_content">
-                    <h1>Specjalizujemy się w:</h1>
-                    <dl>
-                        <dt>Budynkach: <i class="fas fa-caret-down"></i></dt>
-                        <dd>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
-                                <li>Lorem, ipsum dolor.</li>
-                            </ul>
-                        </dd>
-                        <dt>Obiektach sportowych i rekreacyjnych: <i class="fas fa-caret-down"></i></dt>
-                        <dd>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>Lorem, ipsum dolor.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                            </ul>
-                        </dd>
-                        <dt>Obiektach przemysłowych: <i class="fas fa-caret-down"></i></dt>
-                        <dd>
-                            <ul>
-                                <li>Lorem, ipsum dolor</li>
-                                <li>Lorem, ipsum</li>
-                                <li>Lorem ipsum dolor sit amet</li>
-                            </ul>
-                        </dd>
-                        <dt>Obiektach dla potrzeb rolnictwa <i class="fas fa-caret-down"></i></dt>
-                        <dd>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>Lorem ipsum dolor sit amet</li>
-                            </ul>
-                        </dd>
-                        <dt>Obiektach specjalistycznych: <i class="fas fa-caret-down"></i></dt>
-                        <dd>
-                            <ul>
-                                <li>Lorem, ipsum</li>
-                                <li>Lorem, ipsum dolor</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                            </ul>
-                        </dd>
-                    </dl>
-                </div>
-                <div class="bottom_content">
-                    <h1>Dodatkowo świadczymy usługi w zakresie:</h1>
+    <main>
+        <div class="main_width_offer">
+            <div class="main_content_top">
+                <h1>Oferta</h1>
+                <p>Prowadzimy prace zarówno przy obiektach nowoprojektowanych jak i remontach, adaptacjach i rozbudowach. We wszystkich naszych projektach przykładamy wielką uwagę by spełniały oczekiwania naszych klientów kierując się ich sugestiami i potrzebami.
+
+                    Na każdym etapie projektowania służymy naszym klientom pomocą doradczą w uzyskaniu wszelkich pozwoleń
+                    
+                    i odstępstw.</p>
+            </div>
+            <div class="main_content">
+                <div class="left_content">
+                    <h1>Co dla Ciebie zrobimy?</h1>
                     <ul>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fas fa-angle-double-right"></i> Projekt indywidualny budynku lub obiektu budowlanego</li>
+                        <li><i class="fas fa-angle-double-right"></i> Inwentaryzacje obiektów budowlanych</li>
+                        <li><i class="fas fa-angle-double-right"></i> Ekspertyzy techniczne</li>
+                        <li><i class="fas fa-angle-double-right"></i> Dokumentacje zamienne, powykonawcze</li>
                     </ul>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit atque voluptatibus quia temporibus ad deleniti laudantium nostrum autem? Quasi, at perspiciatis modi voluptatibus tempora maiores eligendi dignissimos beatae similique soluta.</p>
+                </div>
+                <div class="right_content">
+                    <h1>Co więcej?</h1>
+                    <ul>
+                        <li><i class="fas fa-angle-double-right"></i> Zajmiemy się doradztwem</li>
+                        <li><i class="fas fa-angle-double-right"></i> Opracujemy projekty koncepcyjne</li>
+                        <li><i class="fas fa-angle-double-right"></i> Opracujemy projekty budowowlane i wykonawcze</li>
+                    </ul>
                 </div>
             </div>
-        </main>
-        <footer>
-            <div class="main_width_footer">
-                <div class="footer">
-                    <div>
-                        Biuro Projektowe FHU PAGO
-                    </div>
-                    <div>
+            <div class="central_content">
+                <h1>Specjalizujemy się w:</h1>
+                <dl>
+                    <dt>Budynkach: <i class="fas fa-caret-down"></i></dt>
+                    <dd>
                         <ul>
-                            <li><i class="fa fa-phone"></i><a href=""> 509461400</a></li>
-                            <li><i class="fa fa-phone"></i><a href=""> 505106712</a></li>
-                            <li><a href="https://www.facebook.com/pagoprojekty/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                            <li>Mieszkalnych projektowanych indywidualnie oraz adaptacjach projektów gotowych.</li>
+                            <li>Budynkach mieszkalnych wielorodzinnych wraz z garażami podziemnymi</li>
+                            <li>Garażach wolnostojących</li>
+                            <li>Obiektach handlowych, gastronomicznych, aptekach</li>
+                            <li>Magazynowych oraz usługowych</li>
                         </ul>
-                    </div>
-                    
+                    </dd>
+                    <dt>Obiektach sportowych i rekreacyjnych: <i class="fas fa-caret-down"></i></dt>
+                    <dd>
+                        <ul>
+                            <li>Salach sportowych</li>
+                            <li>Salach widowiskowych</li>
+                            <li>Halach gimnastycznych</li>
+                        </ul>
+                    </dd>
+                    <dt>Obiektach przemysłowych: <i class="fas fa-caret-down"></i></dt>
+                    <dd>
+                        <ul>
+                            <li>Halach produkcyjnych</li>
+                            <li>Halach magazynowych</li>
+                            <li>Wiatach</li>
+                        </ul>
+                    </dd>
+                    <dt>Obiektach dla potrzeb rolnictwa <i class="fas fa-caret-down"></i></dt>
+                    <dd>
+                        <ul>
+                            <li>Budynki inwentarskie takie jak: obory, chlewnie, kurniki itp.</li>
+                            <li>Budynki gospodarcze i magazynowe</li>
+                        </ul>
+                    </dd>
+                    <dt>Obiektach specjalistycznych: <i class="fas fa-caret-down"></i></dt>
+                    <dd>
+                        <ul>
+                            <li>Stacje paliw</li>
+                            <li>Stacje obsługi pojazdów</li>
+                            <li>Myjnie samochodowe</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <div class="bottom_content">
+                <h1>Dodatkowo świadczymy usługi w zakresie:</h1>
+                <ul>
+                    <li><i class="fas fa-angle-double-right"></i> Nadzorów budowlanych</li>
+                    <li><i class="fas fa-angle-double-right"></i> Wykonywania przeglądów stanu technicznego budynków</li>
+                    <li><i class="fas fa-angle-double-right"></i> Zakładania książek obiektów</li>
+                </ul>
+                <p>Przy zakupie gotowego projektu gwarantujemy cenę katalogową i pomoc w wyborze projektu odpowiadającemu parametrom działki. Ponadto przy zamówieniu projektu pisanie wszelkiego rodzaju wniosków i podań gratis!</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="main_width_footer">
+            <div class="footer">
+                <div>
+                    Biuro Projektowe FHU PAGO
                 </div>
-            </div>  
-        </footer>
+                <div>
+                    <ul>
+                        <li><i class="fa fa-phone"></i><a href=""> 509461400</a></li>
+                        <li><i class="fa fa-phone"></i><a href=""> 505106712</a></li>
+                        <li><a href="https://www.facebook.com/pagoprojekty/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>  
+    </footer>
+
 </body>
 </html>
